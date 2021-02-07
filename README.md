@@ -1,10 +1,10 @@
 # Puzzles
 
-## [Hanoi Towers](./Hanoi\ Towers)
+## [Hanoi Towers](./Hanoi%20Towers)
 
 ## [N Queens](./Queens)
 
-## [Knight Tour](./Knight\ Tour)
+## [Knight Tour](./Knight%20Tour)
 
 ## [Professor Layton](./Layton)
 
