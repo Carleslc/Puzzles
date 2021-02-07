@@ -4,6 +4,9 @@
 # N queens problem
 # https://en.wikipedia.org/wiki/Eight_queens_puzzle
 
+# Brute-force permutations solver
+# Time complexity O(N!)
+
 # usage: queens-permutations.py [-h] [--n N] [--verbose] [--count-only] [--first]
 #                  [--solution SOLUTION]
 
@@ -37,7 +40,7 @@ def set_args():
     exit(1)
   return args
 
-# Some math to make it easier to find a solution
+# Some math to make it easier to validate a solution
 # Two queens are in the same diagonal if i1 - j1 == i2 - j2 (left to right) OR i1 + j1 == i2 + j2 (right to left)
 def diagonals(i1, j1, i2, j2):
   return i1 - j1 == i2 - j2 or i1 + j1 == i2 + j2
@@ -69,7 +72,7 @@ def is_solution_verbose(queens):
   return True
 
 def ilen(iterable):
-  return reduce(lambda sum, element: sum + 1, iterable, 0)
+  return reduce(lambda sum, _: sum + 1, iterable, 0)
 
 def print_(s):
   print(s, end='')
@@ -123,11 +126,9 @@ if __name__ == "__main__":
     total = ilen(is_solution_filter)
   else:
     solutions = list(is_solution_filter)
-    total = len(solutions)
-
-  if not args.count_only:
     for qs in solutions:
       print_board(qs)
+    total = len(solutions)
   
   end = timer()
   elapsed = end - start

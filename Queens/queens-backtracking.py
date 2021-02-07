@@ -4,6 +4,10 @@
 # N queens problem
 # https://en.wikipedia.org/wiki/Eight_queens_puzzle
 
+# Backtracking solver
+# Time complexity O(2^N)
+# ~500x times faster than queens-permutations
+
 # usage: queens-backtracking.py [-h] [--n N] [--verbose] [--count-only] [--first]
 #                  [--solution SOLUTION]
 
@@ -21,7 +25,6 @@
 
 import argparse
 from timeit import default_timer as timer
-from itertools import permutations
 from functools import reduce
 
 def set_args():
@@ -108,7 +111,7 @@ def queens_solutions(n, verbose = False):
   return solve(n, 0, [None] * n, [True] * n, [True] * (2*n - 1), [True] * (2*n - 1))
 
 def ilen(iterable):
-  return reduce(lambda sum, element: sum + 1, iterable, 0)
+  return reduce(lambda sum, _: sum + 1, iterable, 0)
 
 def print_(s):
   print(s, end='')
@@ -155,13 +158,11 @@ if __name__ == "__main__":
     total = ilen(is_solution_filter)
   else:
     solutions = list(is_solution_filter)
-    total = len(solutions)
-
-  if not args.count_only:
     if args.verbose and not args.first:
       print()
     for qs in solutions:
       print_board(qs)
+    total = len(solutions)
   
   end = timer()
   elapsed = end - start
