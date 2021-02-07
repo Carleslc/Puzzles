@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# PUZZLE 145 from Professor Layton and the Diabolical Box
+# Professor Layton: Diabolical Box (Puzzle 145)
 
 import argparse
 

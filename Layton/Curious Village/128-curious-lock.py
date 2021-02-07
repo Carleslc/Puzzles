@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Professor Layton: Curious Village (Puzzle 128)
-#
+
 # Solve the following lock:
 #
 #   A   E

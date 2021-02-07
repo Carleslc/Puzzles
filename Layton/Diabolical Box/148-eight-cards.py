@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# PUZZLE 148 from Professor Layton and the Diabolical Box
+# Professor Layton: Diabolical Box (Puzzle 148)
+
 # What are the valid products including all digits from 1 to 8 in the form ABC x D = EFGH ?
 
 from itertools import permutations
