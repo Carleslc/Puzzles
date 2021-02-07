@@ -1,12 +1,12 @@
 # Puzzles
 
-## [Hanoi Towers](./Hanoi Towers)
+## [Hanoi Towers](./Hanoi\ Towers)
 
 ## [N Queens](./Queens)
 
-## [Knight Tour](./Knight Tour)
+## [Knight Tour](./Knight\ Tour)
 
-## [Professor Layton](./Professor Layton)
+## [Professor Layton](./Layton)
 
 ## [Keep Talking and Nobody Explodes (KTANE)](./KTANE)
 
