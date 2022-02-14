@@ -1,9 +1,9 @@
+% https://www.metalevel.at/prolog/optimization
+%
 % A chicken farmer also has some cows for a total of 30 animals,
 % and the animals have 74 legs in all.
 % 
 % How many chickens does the farmer have?
-% 
-% https://www.metalevel.at/prolog/optimization
 
 :- use_module(library(clpfd)).
 

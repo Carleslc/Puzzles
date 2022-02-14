@@ -2,8 +2,14 @@
 # -*- coding: utf-8 -*-
 
 # Professor Layton: Diabolical Box (Puzzle 148)
+# https://layton.fandom.com/wiki/Puzzle:Eight_Cards
 
-# What are the valid products including all digits from 1 to 8 in the form ABC x D = EFGH ?
+"""
+These cards, numbered 1 to 8, can be used to make two multiplication equations.
+One is given here (453 x 6 = 2718), but can you work out the second one?
+
+What are the valid products including all digits from 1 to 8 in the form ABC x D = EFGH ?
+"""
 
 from itertools import permutations
 

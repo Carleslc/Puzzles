@@ -2,15 +2,23 @@
 # -*- coding: utf-8 -*-
 
 # Professor Layton: Curious Village (Puzzle 128)
+# https://layton.fandom.com/wiki/Puzzle:Number_Lock
 
-# Solve the following lock:
-#
-#   A   E
-#   B D F
-#   C   G
-#
-# Where A * B * C = E * F * G = B * D * F
-# With different digits from 1 to 9
+"""
+The door in front of you has an odd lock mounted on the front.
+The only way to unlock this strange contraption is to place small tiles labeled from one to nine in its slots.
+The lock will open when the numbers on the lock equal the same number when multiplied vertically and horizontally.
+
+There are nine tiles, but the lock only has seven slots, so you won't need two tiles.
+
+Can you open the lock?
+
+  A   E
+  B D F
+  C   G
+
+A * B * C = E * F * G = B * D * F
+"""
 
 from itertools import permutations
 

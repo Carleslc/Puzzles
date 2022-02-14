@@ -2,6 +2,19 @@
 # -*- coding: utf-8 -*-
 
 # Professor Layton: Diabolical Box (Puzzle 145)
+# https://layton.fandom.com/wiki/Puzzle:500_Pearls
+
+"""
+A wizard sets a traveller a strange task.
+
+"There are 500 pearls in that cave.
+I want you to go and bring a certain number of pearls to me.
+This number allows you to divide the pearls into groups of 2, 3, 4, 5, 6 or 7 and always have one pearl left over.
+Bring me this number of pearls and you can keep them all for yourself!"
+
+The traveller tries his best, but the number of pearls he bring back doesn't leave one pearl over when divided into groups of 4.
+How many pearls did he bring to the wizard?
+"""
 
 import argparse
 
