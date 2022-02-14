@@ -10,7 +10,7 @@
 #   C   G
 #
 # Where A * B * C = E * F * G = B * D * F
-# With digits from 1 to 9
+# With different digits from 1 to 9
 
 from itertools import permutations
 
