@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # HANOI'S TOWER
+# https://en.wikipedia.org/wiki/Tower_of_Hanoi
 # Minimum number of moves: 2^n + 1
 
 import argparse
@@ -16,11 +17,10 @@ def hanoi(n, src, dest, aux):
   if n == 1:
     print(f"{src} -> {dest}")
     return 1
-  else:
-    moves = hanoi(n - 1, src, aux, dest)
-    moves += hanoi(1, src, dest, aux)
-    moves += hanoi(n - 1, aux, dest, src)
-    return moves
+  moves = hanoi(n - 1, src, aux, dest)
+  moves += hanoi(1, src, dest, aux)
+  moves += hanoi(n - 1, aux, dest, src)
+  return moves
 
 if __name__ == "__main__":
   set_args()

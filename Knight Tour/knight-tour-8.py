@@ -14,7 +14,6 @@ import chess  # python-chess (https://python-chess.readthedocs.io/en/latest/)
 import chess.svg
 
 from app import App
-from window import Window
 
 def set_args():
   global args
