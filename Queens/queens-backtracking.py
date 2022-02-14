@@ -6,8 +6,7 @@
 
 # Backtracking solver
 # Time complexity O(2^N)
-# ~500x times faster than queens-permutations
-
+# ~500x times faster than queens-permutations
 # usage: queens-backtracking.py [-h] [--n N] [--verbose] [--count-only] [--first]
 #                  [--solution SOLUTION]
 
@@ -158,11 +157,13 @@ if __name__ == "__main__":
     total = ilen(is_solution_filter)
   else:
     solutions = list(is_solution_filter)
+    total = len(solutions)
+
+  if not args.count_only:
     if args.verbose and not args.first:
       print()
     for qs in solutions:
       print_board(qs)
-    total = len(solutions)
   
   end = timer()
   elapsed = end - start

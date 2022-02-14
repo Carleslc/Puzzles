@@ -126,9 +126,11 @@ if __name__ == "__main__":
     total = ilen(is_solution_filter)
   else:
     solutions = list(is_solution_filter)
+    total = len(solutions)
+
+  if not args.count_only:
     for qs in solutions:
       print_board(qs)
-    total = len(solutions)
   
   end = timer()
   elapsed = end - start

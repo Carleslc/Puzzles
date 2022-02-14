@@ -86,10 +86,10 @@ def maps():
           print_info(response.status)
     if country is None:
       if not browser_opened:
-        webbrowser.open('https://maps.google.com/')
+        webbrowser.open(f'https://maps.google.com/maps/place/{coords[0]},{coords[1]}')
         browser_opened = True
       print_info(', '.join(COUNTRIES))
-      print_info(f'Search: {coords[0]}, {coords[1]}')
+      print_info(f'Coordinates: {coords[0]}, {coords[1]}')
       countries_lower = set(map(str.lower, COUNTRIES))
       while country not in countries_lower:
         country = input('Country: ').lower()
